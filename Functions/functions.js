@@ -30,25 +30,83 @@
 //     return find(1, "1");
 // }
 
-console.log(findSolution(11)); // Output: ((1 + 5) + 5)
+// console.log(findSolution(11)); // Output: ((1 + 5) + 5)
 
-function findSolution(target) {
-    function find(current, history) {
-        if (current == target) {
-            return history;
+// function findSolution(target) {
+//     function find(current, history) {
+//         if (current == target) {
+//             return history;
 
-        }
-        else if (current > target) {
-            return null;
-        }
-        else {
-            return find(current + 5, `(${history} + 5)`) ?? find(current*3, `(${history} * 3)`);
+//         }
+//         else if (current > target) {
+//             return null;
+//         }
+//         else {
+//             return find(current + 5, `(${history} + 5)`) ?? find(current*3, `(${history} * 3)`);
 
-        }
-    }
+//         }
+//     }
 
-    return find(1, "1");
-}
+//     return find(1, "1");
+// }
 
-console.log(findSolution(27));
+// console.log(findSolution(27));
 
+// function isEven(n) {
+//     if (n == 0){
+//         return true
+//     }
+//     else if (n == 1) {
+//         return false
+//     }
+
+//     else if (n < 0 ){
+//         return isEven(-n)
+//     }
+
+//     else return isEven(n-2)
+// }
+
+// console.log(isEven(15));
+
+
+// function power(base, exponent) {
+//     if (exponent == 0) {
+//         return 1
+//     } else {
+//         return base * power(base, exponent - 1)
+//     }
+// }
+
+// console.log(power(2,3));
+
+
+// function countBs(string) {
+//     let count = 0;
+//     for (let i = 0; i < string.length; i++) {
+//         if (string[i] === "B") {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// // Testing countBs
+// console.log(countBs("BBC")); // 2
+// console.log(countBs("aBcdB")); // 2
+// console.log(countBs("hello")); // 0
+
+// function countChar(string, char) {
+//     let count = 0;
+//     for (let i = 0; i < string.length; i++) {
+//         if (string[i] === char) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// // Testing countChar
+// console.log(countChar("kakkerlak", "k")); // 4
+// console.log(countChar("hello", "l")); // 2
+// console.log(countChar("mississippi", "s")); // 4
